@@ -1,0 +1,37 @@
+from setuptools import setup
+
+setup(name='cowrie',
+      version='0.1',
+      description='',
+      url='https://github.com/micheloosterhof/cowrie',
+      author='Michel Oosterhof',
+      author_email='michel@oosterhof.net',
+      license='LICENSE.md',
+      scripts=[
+          'bin/asciinema',
+          'bin/cowrie',
+          'bin/createfs',
+          'bin/fsctl',
+          'bin/playlog',
+      ],
+      packages=[
+          'cowrie',
+          'twisted/plugins',
+      ],
+      install_requires=[
+          'pyasn1_modules',
+          'twisted>=17.1.0',
+          'cryptography>=0.9.1',
+          'configparser',
+          'pyopenssl',
+          'pyparsing',
+          'packaging',
+          'appdirs>=1.4.0',
+          'attrs',
+          'service_identity',
+          'python-dateutil',
+          'tftpy',
+      ],
+      test_suite='twisted.trial',
+      tests_require=['twisted>=17.1.0'],
+      zip_safe=False)

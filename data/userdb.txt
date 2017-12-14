@@ -3,3 +3,7 @@ root:x:!123456
 root:x:*
 richard:x:*
 richard:x:fout
+root:x:changeme
+root:x:changeme
+root:x:changeme
+
